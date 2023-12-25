@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - AI-Powered Education Platform</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login-styles.css') }}">
+</head>
+<body>
+    <header>
+        <!-- You can include a navigation bar or a back button here -->
+    </header>
+
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="login-form" action="/login" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Log In">
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

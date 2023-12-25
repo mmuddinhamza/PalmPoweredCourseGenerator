@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Module</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+    </style>
+</head>
+<body>
+    <a href="{{ url_for('saved_course', course_name=course_name) }}" class="button">Back to Course</a>
+    <div class="content">
+        <h1>Module Content</h1>
+    {% extends "base.html" %}
+
+        {% block content %}
+            {{ content|safe }}
+        {% endblock %}
+    </div>
+</body>
+</html>
