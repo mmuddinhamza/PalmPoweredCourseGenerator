@@ -18,7 +18,7 @@ def markdown_to_list(markdown_string):
 
 
 def generate_text(course):
-    palm.configure(api_key="AIzaSyAWMEx0ByKdMqvuWQSN4uBGNmvfyX88Fw0")
+    palm.configure(api_key="YOUR-API-KEY")
     models = [
         m for m in palm.list_models()
         if 'generateText' in m.supported_generation_methods
